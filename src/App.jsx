@@ -1,3 +1,34 @@
+function WaitlistForm({ buttonText = "Notify Me" }) {
+  return (
+    <form
+      action="https://app.kit.com/forms/9322192/subscriptions"
+      method="post"
+      className="mx-auto mt-12 max-w-xl rounded-[28px] border border-black/8 bg-white/80 p-3 shadow-[0_16px_50px_rgba(0,0,0,0.05)] backdrop-blur"
+    >
+      <div className="flex flex-col gap-3 sm:flex-row">
+        <input
+          type="email"
+          name="email_address"
+          placeholder="Email address"
+          aria-label="Email address"
+          required
+          className="h-14 flex-1 rounded-[18px] border border-black/10 bg-transparent px-5 text-[15px] outline-none placeholder:text-black/32 focus:border-[#1E3A2F]"
+        />
+        <button
+          type="submit"
+          className="h-14 rounded-[18px] bg-[#1E3A2F] px-7 text-sm font-medium tracking-[0.08em] text-white"
+        >
+          {buttonText}
+        </button>
+      </div>
+      <p className="mt-3 text-xs text-black/36">
+        Join the All Goods Aisle waitlist. After subscribing, Kit may show a
+        confirmation step.
+      </p>
+    </form>
+  );
+}
+
 export default function App() {
   return (
     <div className="min-h-screen bg-[#F5F2EA] text-[#111111]">
@@ -32,22 +63,7 @@ export default function App() {
             Limited First Release • Join the Waitlist
           </div>
 
-          <div className="mx-auto mt-12 max-w-xl rounded-[28px] border border-black/8 bg-white/80 p-3 shadow-[0_16px_50px_rgba(0,0,0,0.05)] backdrop-blur">
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <input
-                type="email"
-                placeholder="Email address"
-                className="h-14 flex-1 rounded-[18px] border border-black/10 bg-transparent px-5 text-[15px] outline-none placeholder:text-black/32 focus:border-[#1E3A2F]"
-              />
-              <button className="h-14 rounded-[18px] bg-[#1E3A2F] px-7 text-sm font-medium tracking-[0.08em] text-white">
-                Notify Me
-              </button>
-            </div>
-            <p className="mt-3 text-xs text-black/36">
-              A premium waitlist experience powered by Kit can sit here without
-              changing the overall layout.
-            </p>
-          </div>
+          <WaitlistForm buttonText="Notify Me" />
 
           <div className="mt-20 overflow-hidden rounded-[32px] shadow-[0_32px_90px_rgba(0,0,0,0.12)]">
             <img
@@ -139,18 +155,7 @@ export default function App() {
             product announcements.
           </p>
 
-          <div className="mx-auto mt-10 max-w-xl rounded-[28px] border border-black/8 bg-white/80 p-3 shadow-[0_16px_50px_rgba(0,0,0,0.05)]">
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <input
-                type="email"
-                placeholder="Email address"
-                className="h-14 flex-1 rounded-[18px] border border-black/10 bg-transparent px-5 text-[15px] outline-none placeholder:text-black/32 focus:border-[#1E3A2F]"
-              />
-              <button className="h-14 rounded-[18px] bg-[#1E3A2F] px-7 text-sm font-medium tracking-[0.08em] text-white">
-                Join Waitlist
-              </button>
-            </div>
-          </div>
+          <WaitlistForm buttonText="Join Waitlist" />
         </section>
       </main>
 

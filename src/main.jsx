@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App.jsx";
+import ThankYou from "./ThankYou.jsx";
+import "./index.css";
+
+const path = window.location.pathname;
+
+const Page = path === "/thank-you" ? <ThankYou /> : <App />;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <React.StrictMode>{Page}</React.StrictMode>
 );
