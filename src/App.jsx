@@ -164,10 +164,10 @@ export default function App() {
           All Goods Aisle LLC
         </p>
         <p className="mt-3">
-          Registered Office: 418 Broadway, Ste N, Albany, NY 12207.
+          Registered Office: 418 Broadway, Ste N, Albany, NY 12207. 
         </p>
         <p className="mt-1">Contact: info@allgoodsaisle.com</p>
-        <p className="mt-6">© 2026 All Goods Aisle LLC. All Rights Reserved.</p>
+        <p className="mt-6">© 2026 All Goods Aisle LLC. All Rights Reserved. </p>
       </footer>
     </div>
   );
