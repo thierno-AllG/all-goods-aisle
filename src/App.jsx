@@ -3,7 +3,7 @@ function WaitlistForm({ buttonText = "Notify Me" }) {
     <form
       action="https://app.kit.com/forms/9322192/subscriptions"
       method="post"
-      className="mx-auto mt-10 max-w-xl rounded-[30px] border border-[rgba(31,28,23,0.08)] bg-[rgba(255,255,255,0.82)] p-4 sm:p-3 shadow-[0_18px_60px_rgba(58,44,28,0.05)] backdrop-blur"
+      className="mx-auto mt-10 max-w-xl rounded-[28px] border border-[rgba(31,28,23,0.08)] bg-[rgba(255,255,255,0.9)] p-3 sm:p-4 shadow-[0_18px_60px_rgba(58,44,28,0.05)] backdrop-blur"
     >
       <div className="flex flex-col gap-4 sm:flex-row">
         <input
@@ -12,12 +12,11 @@ function WaitlistForm({ buttonText = "Notify Me" }) {
           placeholder="Email address"
           aria-label="Email address"
           required
-          className="h-12 sm:h-14 w-full flex-1 rounded-[18px] border border-[rgba(31,28,23,0.14)] bg-[rgba(255,255,255,0.92)] px-4 sm:px-5 text-[15px] text-[#1F1C17] outline-none placeholder:text-[rgba(31,28,23,0.34)] focus:border-[#1F4A3A]"
+          className="h-14 sm:h-14 w-full flex-1 rounded-[22px] border border-[rgba(31,28,23,0.18)] bg-white px-5 text-[15px] text-[#1F1C17] outline-none placeholder:text-[rgba(31,28,23,0.38)] focus:border-[#1F4A3A] transition"
         />
         <button
           type="submit"
-          className="h-14 w-full sm:w-auto rounded-[20px] bg-[#1F4A3A] px-8 text-sm font-medium tracking-[0.08em] text-white transition duration-300 ease-out hover:bg-[#183b2f] hover:shadow-[0_12px_28px_rgba(31,74,58,0.16)]"
-        >
+          className="h-14 w-full sm:w-auto rounded-[22px] bg-[#1F4A3A] px-8 text-sm font-medium tracking-[0.08em] text-white transition duration-300 ease-out hover:bg-[#183b2f] hover:shadow-[0_12px_28px_rgba(31,74,58,0.16)]">
           {buttonText}
         </button>
       </div>
@@ -42,8 +41,8 @@ export default function App() {
         </div>
       </header>
 
-      <main>
-        <section className="mx-auto max-w-5xl px-6 pb-14 pt-20 text-center sm:pt-24 md:pt-36">
+        <main>
+          <section className="mx-auto max-w-5xl px-6 pt-16 pb-12 text-center sm:pt-24 sm:pb-16 md:pt-32 md:pb-20">
           <div className="text-[11px] uppercase tracking-[0.42em] text-black/38">
             Ceremonial Japanese Matcha
           </div>
@@ -70,7 +69,7 @@ export default function App() {
           </div>
 
           {/* SOCIAL PROOF */}
-          <section className="mx-auto max-w-5xl px-6 pt-16 pb-28 text-center">
+          <section className="mx-auto max-w-5xl px-6 pt-12 pb-20 text-center sm:pt-16 sm:pb-24">
             <div className="aga-fade-up aga-delay-4 mx-auto mb-10 h-px w-20 bg-[rgba(31,28,23,0.10)]" />
 
             <div className="aga-fade-up aga-delay-5 grid grid-cols-1 gap-8 sm:grid-cols-3">
@@ -112,7 +111,7 @@ export default function App() {
         </div>
         </section>
 
-        <section className="mx-auto max-w-3xl px-6 py-24 text-center md:py-28">
+        <section className="mx-auto max-w-3xl px-6 py-20 text-center sm:py-24 md:py-28">
           <div className="text-[10px] uppercase tracking-[0.38em] text-[rgba(31,28,23,0.38)]">
             Our Mission
           </div>
@@ -126,7 +125,7 @@ export default function App() {
           </p>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-24">
+        <section className="mx-auto max-w-6xl px-6 pt-12 pb-20 sm:pt-16 sm:pb-24">
           <div className="grid gap-6 md:grid-cols-[1.05fr_0.95fr]">
             <div className="overflow-hidden rounded-[30px]">
               <img
@@ -145,7 +144,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-4xl px-6 pb-28 text-center">
+        <section className="mx-auto max-w-4xl px-6 pt-16 pb-20 text-center sm:pt-20 sm:pb-24">
             <div className="text-[10px] uppercase tracking-[0.38em] text-[rgba(31,28,23,0.38)]">
             Why It Matters
           </div>
@@ -193,7 +192,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-4xl px-6 pb-24 text-center">
+        <section className="mx-auto max-w-4xl px-6 pt-20 pb-20 text-center sm:pt-24 sm:pb-24">
           <h2
             className="text-4xl tracking-[-0.03em] text-[#1F1C17] sm:text-5xl"
             style={{ fontFamily: '"Cormorant Garamond", serif', fontWeight: 500 }}
