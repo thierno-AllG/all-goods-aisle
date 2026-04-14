@@ -3,25 +3,25 @@ function WaitlistForm({ buttonText = "Notify Me" }) {
     <form
       action="https://app.kit.com/forms/9322192/subscriptions"
       method="post"
-      className="mx-auto mt-10 max-w-xl rounded-[34px] border border-[rgba(31,28,23,0.08)] bg-[rgba(255,255,255,0.82)] p-3 shadow-[0_18px_60px_rgba(58,44,28,0.05)] backdrop-blur"
+      className="mx-auto mt-10 max-w-xl rounded-[30px] border border-[rgba(31,28,23,0.08)] bg-[rgba(255,255,255,0.82)] p-4 sm:p-3 shadow-[0_18px_60px_rgba(58,44,28,0.05)] backdrop-blur"
     >
-      <div className="flex flex-col gap-3 sm:flex-row">
+      <div className="flex flex-col gap-4 sm:flex-row">
         <input
           type="email"
           name="email_address"
           placeholder="Email address"
           aria-label="Email address"
           required
-          className="h-14 flex-1 rounded-[22px] border border-[rgba(31,28,23,0.10)] bg-[rgba(255,255,255,0.88)] px-5 text-[15px] text-[#1F1C17] outline-none placeholder:text-[rgba(31,28,23,0.34)] focus:border-[#1F4A3A]"
+          className="h-12 sm:h-14 w-full flex-1 rounded-[18px] border border-[rgba(31,28,23,0.14)] bg-[rgba(255,255,255,0.92)] px-4 sm:px-5 text-[15px] text-[#1F1C17] outline-none placeholder:text-[rgba(31,28,23,0.34)] focus:border-[#1F4A3A]"
         />
         <button
           type="submit"
-          className="h-14 rounded-[22px] bg-[#1F4A3A] px-8 text-sm font-medium tracking-[0.08em] text-white transition duration-300 ease-out hover:bg-[#183b2f] hover:shadow-[0_12px_28px_rgba(31,74,58,0.16)] hover:-translate-y-[1px]"
+          className="h-14 w-full sm:w-auto rounded-[20px] bg-[#1F4A3A] px-8 text-sm font-medium tracking-[0.08em] text-white transition duration-300 ease-out hover:bg-[#183b2f] hover:shadow-[0_12px_28px_rgba(31,74,58,0.16)]"
         >
           {buttonText}
         </button>
       </div>
-      <p className="mt-3 text-xs tracking-[0.01em] text-[rgba(31,28,23,0.34)]">
+      <p className="mt-4 text-center text-[11px] leading-5 tracking-[0.01em] text-[rgba(31,28,23,0.34)]">
         Early access, launch updates, and first release news.
       </p>
     </form>
@@ -33,10 +33,10 @@ export default function App() {
     <div className="min-h-screen bg-[#F3EEE5] text-[#1F1C17]">
       <header className="sticky top-0 z-40 border-b border-[rgba(31,28,23,0.06)] bg-[rgba(243,238,229,0.82)] backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <div className="text-[11px] uppercase tracking-[0.42em] text-[#1F4A3A]">
+          <div className="text-[10px] uppercase tracking-[0.26em] sm:text-[11px] sm:tracking-[0.42em] text-[#1F4A3A]">
             All Goods Aisle
           </div>
-          <div className="text-[11px] uppercase tracking-[0.32em] text-[rgba(31,28,23,0.38)]">
+          <div className="text-[10px] uppercase tracking-[0.18em] sm:text-[11px] sm:tracking-[0.32em] text-[rgba(31,28,23,0.38)]">
             Launching Soon
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function App() {
           </div>
 
             <h1
-              className="aga-fade-up aga-delay-1 mt-8 text-5xl sm:text-7xl md:text-[96px] leading-[0.94] tracking-[-0.03em] text-[#1F1C17]"
+              className="aga-fade-up aga-delay-1 mt-8 text-[56px] sm:text-7xl md:text-[96px] leading-[0.92] tracking-[-0.04em] text-[#1F1C17]"
             >
         
             A Ritual, Refined.
