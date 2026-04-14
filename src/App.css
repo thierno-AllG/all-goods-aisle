@@ -182,3 +182,38 @@
     border-right-color: var(--border);
   }
 }
+@keyframes agaFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.aga-fade-up {
+  opacity: 0;
+  animation: agaFadeUp 0.9s ease-out forwards;
+}
+
+.aga-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.aga-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.aga-delay-3 {
+  animation-delay: 0.3s;
+}
+
+.aga-delay-4 {
+  animation-delay: 0.4s;
+}
+
+.aga-delay-5 {
+  animation-delay: 0.5s;
+}
